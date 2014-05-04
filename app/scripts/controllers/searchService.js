@@ -1,18 +1,16 @@
 /* global ngDefine: false */
-ngDefine('first.search', function (module) {
+ngDefine('first.service', ['angular'], function (module,angular) {
   'use strict';
-
-  var SearchFactory = [ '$location', '$rootScope', function ($location, $rootScope) {
-
-
-    var search = function () {
-      var args = Array.prototype.slice(arguments);
-
-      return $location.search.apply($location, arguments);
+  console.log('searchService init');
+  var Service = function () {
+    return {
+      sayHello: function () {
+        console.log('hello');
+      }
     };
+  };
 
-    return search;
-  }];
-
-  module.factory('search', SearchFactory);
+  var app = angular.module('first');
+  app.register.factory('helloService', Service);
+  //module.factory('helloService', Service);
 });
