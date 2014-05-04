@@ -22,7 +22,7 @@
     ], function(angular) {
 
       require([
-        APP_NAME,
+        'scripts/app',
         'domReady!'
       ], function() {
         rjsConf.utils.bootAngular(angular, APP_NAME);

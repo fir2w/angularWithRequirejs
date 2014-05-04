@@ -1,7 +1,7 @@
 (function (window) {
   'use strict';
-  var allService = ['module:routeResolverServices:./scripts/services/routeResolver'];
-  var allCtrl = ['module:first.views:./scripts/controllers/views'];
+  var allService = ['module:first.routeResolverServices:./services/routeResolver','module:first.helloService:./services/helloService'];
+  var allCtrl = ['module:first.views:./controllers/views'];
 
   var dependencies = [ 'jquery', 'angular', 'module:ng', 'module:ngResource:angular-resource', 'module:ngRoute:angular-route'].concat(allService, allCtrl);
   ngDefine('first', dependencies, function (module, angular) {

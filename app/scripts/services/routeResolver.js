@@ -1,4 +1,4 @@
-﻿ngDefine('routeResolverServices', ['angular'], function(module, angular) {
+﻿ngDefine('first.routeResolverServices', ['angular'], function(module, angular) {
   'use strict';
 
 

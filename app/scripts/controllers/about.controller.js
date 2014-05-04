@@ -1,4 +1,4 @@
-ngDefine('first.views.about', ['angular', 'module:first.service:./searchService.js'], function (module, angular) {
+define(['angular'], function (angular) {
   'use strict';
   console.log('about init');
   var aboutController = [
@@ -9,5 +9,4 @@ ngDefine('first.views.about', ['angular', 'module:first.service:./searchService.
     }];
   var app = angular.module('first');
   app.register.controller('aboutController', aboutController);
-
 });
